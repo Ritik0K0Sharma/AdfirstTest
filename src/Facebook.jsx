@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 
 const FacebookLogin = () => {
-  const [user,setUser ] = useState(null);
+  const [user, setUser] = useState(null);
   const appId = "969471788495701"; 
- setUser
+ 
   useEffect(() => {
     window.fbAsyncInit = function () {
       window.FB.init({
-        appId: 969471788495701,
+        appId: appId,
         cookie: true,
         xfbml: true,
         version: "v22.0",
@@ -50,7 +50,7 @@ const FacebookLogin = () => {
         </div>
       ) : (
         <button onClick={loginWithFacebook} style={{ padding: "10px", fontSize: "16px" }}>
-          Login with Facebook
+           Facebook Login
         </button>
       )}
     </div>
