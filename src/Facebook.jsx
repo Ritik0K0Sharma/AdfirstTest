@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const FacebookLogin = () => {
   const [user, setUser] = useState(null);
-  const appId = "969471788495701"; 
+  const appId = "2523024017892058"; 
  
   useEffect(() => {
     window.fbAsyncInit = function () {
